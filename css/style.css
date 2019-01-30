@@ -49,15 +49,14 @@ table {
 }
 a{
     text-decoration: none;
-    /*color: #FDFFFF;*/
+    color: #FDFFFF;
+    font-family: 'Kosugi Maru', sans-serif;
+    letter-spacing: 0.7px;
 }
 
 body{
     width: 100%;
     color: #F5F5F5;
-    display: grid;
-    grid-template-columns: 150px 1fr 150px;
-    grid-template-rows: auto;
 }
 
 header{
@@ -67,16 +66,16 @@ header{
     position: fixed;
     width: 100%;
     padding: 0 24px;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto;
 }
-
-header>#logo{
+header>#logo a{
     font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 0.7px;
+    font-size: 16px;
     color: #FDFFFF;
-    /*width: 150px;*/
-    display: flex;
 }
 header>#logo>span{
     display: inline-block;
@@ -86,9 +85,12 @@ header>#logo>a:hover{
     cursor: pointer;
     transition: 0.3s;
 }
-/*header>#menu>ul{*/
-    /*display: flex;*/
-/*}*/
-header>#menu>ul>li {
-    display: inline;
+header>#menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
 }
