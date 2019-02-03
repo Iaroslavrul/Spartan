@@ -56,7 +56,7 @@ a{
 
 body{
     width: 100%;
-    color: #F5F5F5;
+    background-color: #F5F5F5;
 }
 
 header{
@@ -93,4 +93,17 @@ header>#menu{
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
+}
+
+#cards{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 60px 15px;
+}
+
+#cards div{
+    background-color: #FFFFFF;
+    height: 700px;
+    width: 1020px;
 }
