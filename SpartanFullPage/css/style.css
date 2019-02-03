@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color: #FDFFFF;
+    font-family: 'Kosugi Maru', sans-serif;
+    letter-spacing: 0.7px;
+    /*color: #C10015;*/
+}
+
+body{
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+header{
+    background-color: #C10015;
+    height: 64px;
+    line-height: 64px;
+    position: fixed;
+    width: 100%;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto;
+}
+header>#logo a{
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FDFFFF;
+}
+header>#logo>span{
+    display: inline-block;
+}
+header>#logo>a:hover{
+    text-shadow: 2px 2px 5px #FDFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #C10015;
+    /*height: 64px;*/
+    line-height: 64px;
+}
+
+#cards{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 60px 15px;
+}
+
+#cards div{
+    background-color: #FFFFFF;
+    height: 700px;
+    width: 1020px;
+}
