@@ -50,13 +50,32 @@ table {
 a{
     text-decoration: none;
     color: #FDFFFF;
-    font-family: 'Kosugi Maru', sans-serif;
+    /*font-family: 'Kosugi Maru', sans-serif;*/
     letter-spacing: 0.7px;
+    /*color: #C10015;*/
 }
 
 body{
     width: 100%;
     background-color: #F5F5F5;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.section{
+    text-align: center;
+}
+
+h1{
+    font-style: 6em;
+}
+
+p{
+    font-style: 2em;
+}
+
+.intro p{
+    /*width: 50%;*/
+    font-style: 1.5em;
 }
 
 header{
@@ -85,7 +104,7 @@ header>#logo>a:hover{
     cursor: pointer;
     transition: 0.3s;
 }
-header>#menu{
+#menu{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -93,6 +112,32 @@ header>#menu{
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
+    background-color: #C10015;
+    line-height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 70;
+    width: 100%;
+}
+
+/*#menu .flex-element.active{*/
+    /*color: #DE7C5A;*/
+/*}*/
+
+#menu .flex-element.active a{
+    text-shadow: 2px 2px 5px #FDFFFF;
+    color: #FFFFFFF;
+}
+
+/*#menu .flex-element a.active{*/
+    /*color: #DE7C5A;*/
+/*}*/
+
+#menu .flex-element a:hover{
+    text-shadow: 2px 2px 5px #FDFFFF;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 #cards{
