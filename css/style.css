@@ -47,49 +47,54 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: #FDFFFF;
     font-family: 'Kosugi Maru', sans-serif;
     letter-spacing: 0.7px;
-    /*color: #C10015;*/
+    /*color: #E03616;*/
 }
 
-body{
+body {
     width: 100%;
     background-color: #F5F5F5;
     font-family: 'Kosugi Maru', sans-serif;
 }
 
-.section{
+.section {
     text-align: center;
 }
 
-h1{
+h1 {
     font-style: 6em;
     font-family: 'Kosugi Maru', sans-serif;
 }
 
-p{
+p {
     font-family: 'Roboto Slab', serif;
     font-size: 0.8em;
 
 }
-header>#logo a{
+
+header > #logo a {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.5em;
     color: #FDFFFF;
 }
-header>#logo>span{
+
+header > #logo > span {
     display: inline-block;
 }
-header>#logo>a:hover{
+
+header > #logo > a:hover {
     text-shadow: 2px 2px 5px #FDFFFF;
     cursor: pointer;
     transition: 0.3s;
 }
-#menu{
+
+#menu {
     display: flex;
     flex-flow: row nowrap;
     /*justify-content: space-around;*/
@@ -97,7 +102,7 @@ header>#logo>a:hover{
     text-transform: uppercase;
     font-weight: 400;
     font-size: 0.8em;
-    background-color: #C10015;
+    background-color: #E03616;
     line-height: 64px;
     position: fixed;
     top: 0;
@@ -106,36 +111,52 @@ header>#logo>a:hover{
     width: 100%;
 }
 
-#menu .flex-element{
+#fullpage .white {
+    color: #FDFFFF;
+}
+
+#menu .flex-element {
     width: 16.7%;
     text-align: center;
 }
 
-#menu .flex-element.active{
+#menu .flex-element a{
+    display: block;
+}
+
+#menu .flex-element.active {
     background-color: #FDFFFF;
 }
 
-#menu .flex-element.active a{
-    color: #C10015;
+#menu .flex-element.active a {
+    color: #E03616;
 }
 
-#menu .flex-element:hover{
+#menu .flex-element:hover {
     background-color: #FDFFFF;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#menu .flex-element:hover a{
-    color: #C10015;
+#menu .flex-element:hover a {
+    color: #E03616;
 }
 
-img{
-    top: 0;
-    /*width: 300px;*/
+#section5 img {
     transform: rotate(90deg);
+    /*left: 130%;*/
+    /*top: 40px;*/
     max-width: 400px;
-    padding: 1rem;
-    position: relative;
-    background: linear-gradient(to left, #00C853, #B2FF59);
     padding: 3px;
+    /*position: relative;*/
+    background: linear-gradient(to left, #00C853, #B2FF59);
+    /*padding: 3px;*/
+}
+
+#section5 h3{
+    /*top: 20px;*/
+}
+
+#section5 span{
+    /*top: 20px;*/
 }
