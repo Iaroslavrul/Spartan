@@ -50,7 +50,7 @@ table {
 a{
     text-decoration: none;
     color: #FDFFFF;
-    /*font-family: 'Kosugi Maru', sans-serif;*/
+    font-family: 'Kosugi Maru', sans-serif;
     letter-spacing: 0.7px;
     /*color: #C10015;*/
 }
@@ -67,33 +67,18 @@ body{
 
 h1{
     font-style: 6em;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 p{
-    font-style: 2em;
-}
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8em;
 
-.intro p{
-    /*width: 50%;*/
-    font-style: 1.5em;
-}
-
-header{
-    background-color: #C10015;
-    height: 64px;
-    line-height: 64px;
-    position: fixed;
-    width: 100%;
-    padding: 0 24px;
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto;
 }
 header>#logo a{
-    font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.5em;
     color: #FDFFFF;
 }
 header>#logo>span{
@@ -107,11 +92,11 @@ header>#logo>a:hover{
 #menu{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.8em;
     background-color: #C10015;
     line-height: 64px;
     position: fixed;
@@ -121,34 +106,36 @@ header>#logo>a:hover{
     width: 100%;
 }
 
-/*#menu .flex-element.active{*/
-    /*color: #DE7C5A;*/
-/*}*/
-
-#menu .flex-element.active a{
-    text-shadow: 2px 2px 5px #FDFFFF;
-    color: #FFFFFFF;
+#menu .flex-element{
+    width: 16.7%;
+    text-align: center;
 }
 
-/*#menu .flex-element a.active{*/
-    /*color: #DE7C5A;*/
-/*}*/
+#menu .flex-element.active{
+    background-color: #FDFFFF;
+}
 
-#menu .flex-element a:hover{
-    text-shadow: 2px 2px 5px #FDFFFF;
+#menu .flex-element.active a{
+    color: #C10015;
+}
+
+#menu .flex-element:hover{
+    background-color: #FDFFFF;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#cards{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    padding: 60px 15px;
+#menu .flex-element:hover a{
+    color: #C10015;
 }
 
-#cards div{
-    background-color: #FFFFFF;
-    height: 700px;
-    width: 1020px;
+img{
+    top: 0;
+    /*width: 300px;*/
+    transform: rotate(90deg);
+    max-width: 400px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to left, #00C853, #B2FF59);
+    padding: 3px;
 }

@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type">
-    <meta name="Resource-type" content="Document" />
+    <meta name="Resource-type" content="Document"/>
 
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <link rel="stylesheet" type="text/css" href="examples.css" />
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fullpage.css"/>
+    <link rel="stylesheet" type="text/css" href="examples.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Kosugi+Maru|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
 </head>
@@ -16,17 +15,15 @@
 <div id="menu">
     <div class="flex-element" data-menuanchor="1rdPage"><a href="#1rdPage">охрана обьектов</a></div>
     <div class="flex-element" data-menuanchor="2rdPage"><a href="#2rdPage">физическая охрана</a></div>
-    <div class="flex-element" data-menuanchor="3rdPage"><a href="#3rdPage">технические средства охраны</a></div>
+    <div class="flex-element" data-menuanchor="3rdPage"><a href="#3rdPage">тех средства охраны</a></div>
     <div class="flex-element" data-menuanchor="4rdPage"><a href="#4rdPage">пожарная безопасность</a></div>
     <div class="flex-element" data-menuanchor="5rdPage"><a href="#5rdPage">инкасация</a></div>
     <div class="flex-element" data-menuanchor="6rdPage"><a href="#6rdPage">кто мы</a></div>
 </div>
 <div id="fullpage">
     <div class="section" id="section0">
-        <div class="intro">
-            <h1>Lorem ipsum.</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
+        <h1>Lorem ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
     </div>
     <div class="section" id="section1">
         <div class="intro">
@@ -53,25 +50,19 @@
         </div>
     </div>
     <div class="section" id="section5">
-        <div class="intro">
-            <h1>Lorem ipsum.</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
-    <div class="section" id="section6">
         <div class="slide" id="slide1">
-            <div class="intro">
-                <img src="" alt="">
-                <h3>Слайд1</h3>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-            </div>
-        </div>
-        <div class="slide" id="slide2">
+            <img src="img/p1.jpg" alt="">
             <h3>Слайд1</h3>
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
         </div>
+        <div class="slide" id="slide2">
+            <img src="img/p2.jpg" alt="">
+            <h3>Слайд2</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+        </div>
         <div class="slide" id="slide3">
-            <h3>Слайд1</h3>
+            <img src="img/p3.jpg" alt="">
+            <h3>Слайд3</h3>
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
         </div>
     </div>
@@ -79,10 +70,11 @@
 <script type="text/javascript" src="fullpage.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        sectionsColor: ['#0D0221', '#090446', '#22007C', '#29339B', '#3C91E6', '#D6FFF6'],
         menu: '#menu',
         navigation: true,
-        controlArrows: true,
+        controlArrows: false,
+        slidesNavigation: true,
         loopTop: true,
         loopBottom: true,
         anchors: ['1rdPage', '2rdPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage'],
